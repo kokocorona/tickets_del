@@ -5,9 +5,7 @@ const {CatModel, validteCat} = require("../models/catModel")
 const { auth } = require("../middlewares/auth");
 const router = express.Router();
 
-router.get("/", async(req,res) => {
-  res.json({msg:"categories / cats work"});
-})
+
 
 router.get("/", async(req,res) => {
   // אם לא מוצא את קווארי פר פייג' ערך שווה 10
